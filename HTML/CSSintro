@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>CSS intro</title>
+		<link href="external.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>STYLES CSS</h1>
+		<h2 class="head2">USING Class css</h2>
+		<h3>colouring</h3>
+		<p style="color: red; background-color: #000000;">HELLO. iam tharun</p>
+		<p>How do you do?</p>
+		<p class="head2">You look awesome</p>
+	</body>
+
+</html>

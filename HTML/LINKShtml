@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>LINKS</title>
+	</head>
+	<body>
+		<a href="https://www.google.com/">Open Google in this tab</a>
+		<br>
+		<a href="https://www.google.com/" target="_blank" >Open Google in new tab</a>
+		<hr>
+		<a href="https://www.facebook.com/" target="_blank" >Open Facebook in new tab</a>
+		<hr>
+		<a href="LISThtml">List</a>
+		<br>
+		<a href="../LISThtml2">List2</a>
+		<br>
+		<a href="introHTML2" target="_blank">TEXTFORMAT</a>
+	</body>
+
+</html>

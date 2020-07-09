@@ -1,0 +1,55 @@
+major three types of data types in javascript
+1)strings  alert("hey")
+2)numbers	alert(23)   alert(2+3) =5		
+3)boolean functions
+
+type of gives the datatype we are dealing with.  type("hey") =string
+promt("what is your name");
+
+control+enter to execute in snippets;
+
+declaring varioables: var myName;
+myName = prompt("Wht is ur name?");
+alert(myName);
+
+
+**
+var myName;
+var myAge;
+
+myName = prompt("WHt is your name?");
+myAge = prompt("UR age");
+alert("MY friend "+myName+" mama is of age "+myAge);
+
+****
+var tweet= prompt("Enter youe tweet");
+var tweetlen = tweet.length;
+var remchar = 300-tweetlen;
+alert("You have "+ remchar + " remaining caharacters to add to add");
+
+*************
+slice function is used.	var tweetcut= tweet.slice(0,300) takes onlu 300 chars.
+
+
+var tweet= prompt("Enter youe tweet");
+
+var tweetlen = tweet.length;
+
+var remchar = 300-tweetlen;
+
+alert("You have "+ remchar + " remaining caharacters to add to add");
+
+var tweetcut =tweet.slice(0,300);
+
+alert(tweetcut);
+****************
+
+var myName= prompt("enter the name");
+
+var upper = myName.toUpperCase();
+ 
+alert("all upper case text is "+upper );
+
+**********
+
+alert(2/3); alert (2*3); ...

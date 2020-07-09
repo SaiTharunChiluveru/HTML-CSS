@@ -1,0 +1,45 @@
+
+.head2{
+	color: red;
+	background-color: yellow;
+	font-family: bold;
+}
+#head3{
+	color:blue;
+	background-color:rgba(43,196,106,0.4); 
+	font-family:italic;
+}
+a:link{
+	color:blue;
+	text-decoration:none;
+}
+a:visited{
+	color:black;
+	text-decoration:none;
+}
+a:hover{
+	color:red;
+	text-decoration:underline;
+}
+a:active{
+	color:blue;
+	font-family:italic;
+	text-decoration:underline
+}
+.MarPad{
+	background-color:yellow;
+	padding-top:30px;
+	padding-bottom:20px;
+}
+.MarPad2{
+	background-color:pink;
+	padding:30px 20px 0px 50px;
+}
+li>a{
+	text-decoration:none;
+	color:black;
+}
+ul{
+	list-style-image: url("bullet.png");\
+	float:left;
+}	

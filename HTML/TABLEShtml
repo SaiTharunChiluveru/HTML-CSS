@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>TABLES</title>
+	</head>
+	<body>
+	<table border="2" bgcolor="#efefef">
+	<tr>
+		<th>column1</th>
+		<th>column22</th>
+		<th>column3</th>
+	</tr>
+	<tr>
+		<td>co1</td>
+		<td>co2</td>
+		<td>co3</td>
+	</tr>
+	<tr>
+		<td>co11</td>
+		<td>co22</td>
+		<td>co33</td>
+	</tr>
+	</table>	
+	</body>
+<html>

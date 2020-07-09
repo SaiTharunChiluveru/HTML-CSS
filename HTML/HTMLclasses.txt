@@ -1,0 +1,191 @@
+ISP = Internet service provider
+our ISP will  allocate the ip aadress for our server
+once you search for google.com then, it goes to the directory of DNS.. 
+once it found google.com it checks for the ip adress associated with it.
+and fetches the files associated with the ip adress and rendered on our screen.
+
+
+example: using html headings 
+
+<html>								//html opening tag or element
+	<head>
+		<title>IntroHTML</title>
+	</head>
+	<body>
+		<h1>HEADING1</h1>				//high fonnt size     
+		<h2>HEAD2</h2>
+		<h3>HEAD3</h3>
+		<h4>HEAD4</h4>
+		<h5>HEAD5</h5>
+		<h6>HEAD6</h6>           			//only 6 are allowed
+		<h7>HEAD7</h7>					// therefore follows like normal text
+	</body>
+	
+</html>								//html closing tag.. **tag which opens first will closes last** 
+
+********************************************************************************************************************************
+
+<hr> <br> tag doesnot have a closing tag
+<hr> prints a horizental line(seprating) 
+<br> breaks thr line in the paragraph. proceeds with a new line 
+
+****
+LIST in html 1) Unordered list  HAVE BULLET ICONS    =>  <ol> tag
+	     2) Ordered LisT	HAVE NUMBERS (1 DEGREE PASHION) => <ul> tag
+
+<li> items in the list should be kept in this tag </li> **one by one**
+***
+NEST5ED LIST
+1) ORDER IN ORDER  LIST
+2) ORDER IN UNORDER LIST
+3) 
+4)
+
+*************************************************************************************************************************************
+
+LINKS IN HTML
+1) opening in same tab
+We have a new tag in linking called anchor tag <a></a>
+whatever we put betwwen open and closing of the annchor tag ,will be hyperlinked to link. <a>google</a>
+The actaul link is to be written in openeing tag only. 
+using the ATTRIBUTE called as "href"  <a href="https://www.google.com/" >google</a>
+the link which is after = is called attribute VALUE.
+There are many kinds of attributes . href is an example
+
+2) oepening in new tab
+Use "target" attribute to oepn in new tab.
+<a href="https://www.google.com/" target="_blank">Google</a>  **sugeets to open the target in the new blank tab**
+ 
+**
+<a href="LISThtml">List</a> **loads the file LISThtml**     //same folder current directory   file:///C:/Users/sunny/OneDrive/Desktop/HTML/LINKShtml
+
+<a href="tharun/LISThtml">List</a>                  //diff folder currrent directoy     file:///C:/Users/sunny/OneDrive/Desktop/HTML/New folder1/LISThtml2
+
+
+****
+ if you wanna go back of the current directory=> one "../" helps to go back once.  similarly we use this as per our needy..
+ 
+ <a href="../LISThtml2">List2</a>            //file:///C:/Users/sunny/OneDrive/Desktop/LISThtml2
+
+***************************************************************************************************************************************
+
+IMAGES in html
+
+1) taking the image from web or internet
+for this we use <img> tag **<img> tag doesnot have closing tag
+we use "src" attribute fro this, where the value of the attribute is source of the image.
+
+<img src=" ">    ** doesnot fit, and can scrroll up down right  left to see full image.
+to set size of the image 
+<img src=" " width="100%"> **means whatever the screens resolution is the image is set to its 100%. ie we dont have right ad left scrolling.but we can scroll up down
+<img src=" " width="100%" height="100%"> **whatevever the screen resolution is it just fit it on screen. with no scroling option..
+
+2) taking image from local (presnt in our pc).
+<img src="lion.jpg" width="100%" height="100%">              //current dirrectory same file
+<img src="New folder1/lion2.jpg" width="100%" height="100%"> //current directory diff file
+<img src="../lion3.jpg" width="100%" height="100%">	      //out of current directory
+*******************************************************************************************************************************************
+
+iFRAMES in html
+1. embeding the youtube vedio to play.
+need to select share option, press embend ,copy the code. paste in the html file and run..
+<html>
+	<head>
+		<title>Iframes</title>
+	</head>
+	<body>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/wmGO-x0NhO8" frameborder="0" allow="accelerometer; autoplay;
+									 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	</body>
+<html>
+
+2.same you can do with google maps.
+
+*************************************************************************************************************************************************
+
+TABLES in html
+
+use <table> </table>
+
+<tr> </tr> termed as table row. whatever you write in between <tr> tag is considered as single row.
+<td> </td> termed as table data also suggets as coloms.
+ <table border="2" bgcolor="#efefef">  ** 2 border lines with background color 
+ <tr>
+	<th>one</th>
+	<th>two</th>
+	<th>three</th>		*** headongs of three colums
+  </tr>
+  <tr>
+	<td>colom1</td>
+	<td>colom2</td>
+	<td>colom3</td>               ***this is considered as single row with 3 colums i.e     one    two    three  //highlated (bold)
+												colom1 colom2 colom3
+  </tr>
+</table>
+**********************************************************************************************************************************************
+
+FORMS in html
+
+<html>
+	<head>
+		<title>FORMS</title>
+	</head>
+	<body>
+		<form>
+			<label>Username:</label>
+			<input type="text" reqiured="required" maxlength="5" size="25">       
+			<input type="password" maxlength="8" size="10" >
+			<br>
+		<textarea>		
+		</textarea>			// can write much info.generally used for writing about.
+			<br>
+			<input type="radio" name="op1" checked="checked">male   // male or female secletion. same is given too permit user to slect any of one.
+										  checked="checked" in male is used to set defualt as male. able to change again..
+			<input type="radio" name="op1">female'
+			<br>
+			<input type="checkbox"checked="checked" >BTech         //it is used to select multiple options. even tho same name="op" used, it wont work
+			<input type="checkbox">MTech
+			<input type="checkbox">MBA
+			<br>
+			<select>						//its a drop down box				
+				<option>Hyderabad</option>
+				<option>Vizag</option>
+				<option>Mancherial</option>
+				<option>Godavarikhani</option>
+			</select>
+			<input type="file"> //we cwn drag a fike and upload.gerenerraly used for resumes..
+		</form>
+	</body>
+</html>
+ 
+*****************************************************************************************************************
+
+vedio and audio in html
+
+<video src="videohtml.mp4" width="100%" height="100%" preload controls loop > </video>
+preload is to load video. //without this video will not play. it shows a picture of it.
+controls is like pause play forward..
+loop = after end of the video it again starts from first.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

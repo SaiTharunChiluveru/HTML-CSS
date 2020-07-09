@@ -1,0 +1,11 @@
+<html>
+	<head>
+		<title>IMAGES</title>
+	</head>
+	<body>
+		<img src=" https://i.guim.co.uk/img/media/19e048685db029092e5999e0b393e8318dacf87b/130_238_4779_2867/master/4779.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e10557abe79f8096f4d189757ee455a4" width="100%" height="100%">
+		<img src="lion.jpg" width="100%" height="100%">
+		<img src="New folder1/lion2.jpg" width="100%" height="100%">
+		<img src="../lion3.jpg" width="50%" align="right">
+	</body>
+<html>

@@ -1,0 +1,16 @@
+<html>			
+	<head>
+		<title>TEXT FORMATING</title>
+	</head>
+	<body>
+		<p>sathish is <b>ballon</b></p>
+		<p>rakesh is <b>big ballon</b></p>
+		<p>sameer is <i><del>Hindu</del> - Muslim</i></p>
+		<p>shivamani is <i><u>hostler</u></i></p>
+		<hr>
+		<p>Ayyagaare no 1<sup>st</sup></p>
+		<p>Water is H<sub>2</sub>O</p>
+		<p>tuigeq  uiahie guyai iuhqi fgai<br>acgayi aeiuh</p>
+	</body>
+	
+</html>				

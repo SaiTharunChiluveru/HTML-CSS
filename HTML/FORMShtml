@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>FORMS</title>
+	</head>
+	<body>
+		<h1>		NEW BROWSER<h1>
+		<h4>SIGNUP FOR FREE<h4>
+		<h6>
+		<form>
+			<label>Username:</label>
+			<input type="text" maxlength="5" size="25">
+			<label>password:</label>
+			<input type="password" required="required" maxlength="8" size="10" >
+			<br>
+			<label>Email:</label>
+			<input type="email" required="reuqired">
+			<br>
+			<label>Write about you</label>
+		<textarea>
+		</textarea>
+			<br>
+			<input type="radio" name="op1" checked="checked">male
+			<input type="radio" name="op1">female'
+			<br>
+			<input type="checkbox"checked="checked" >BTech
+			<input type="checkbox">MTech
+			<input type="checkbox">MBA
+			<br>
+			<label>Select Your city</label>
+			<select>
+				<option>Hyderabad</option>
+				<option>Vizag</option>
+				<option>Mancherial</option>
+				<option>Godavarikhani</option>
+			</select>
+			<br>
+			<label>Upload your Resume here</label>
+			<input type="file">
+			<br>
+			<input type="submit">
+		</form>
+		</h6>
+	</body>
+</html>

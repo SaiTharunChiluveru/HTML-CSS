@@ -1,0 +1,590 @@
+# TUPLE AND LIST OERATIONS.. 
+
+
+x=[1,2,3,4,5,'abc'] #list
+y=(2,3)             #tuple
+print(len(x)+len(y)) #prints 8
+x[0]=100 #possible since LIST is MUTABLE
+# y(0)=100 NOT possible since TUPLE is IMMUTABLE
+x.append(3.3) # Possible with LIST
+# y.append(3,3) NOT possible with TUPLE
+print(x)    #prints the list x
+print(x[0])    
+print(x[-1])    #prints the first element from last
+print(x[-3])    #prints thr third element from last
+print(x[3:]) #prints elemts from index 3 to the end
+print(x[:4]) #prints elemts from starting to 4-1=3rd index elemenmt
+print(x[2:5]) #this is the slice that prints the elements of index 2,3,4  
+print(x[-5:-2]) #this is the slice prints the elsments start from the 5th element from                                       last and end with 2-1=1 1st element fromlast
+print(y*4)  # prints (2,3,2,3,2,3,2,3)  i.e, 4 times
+print(('hi',)*4) #prints ('hi','hi','hi','hi')
+print(5 in y)   #prints True if 5 is an elemnt in y otherwise False
+print(2 in x,11 in x)  
+z=['abc',1,2,3,4,5]
+print(x is z) # print True if x=z otherwise False..(LIST elements are ordered)
+print('Using For loop')
+for item in x:
+    print(item) # prints the elements one by one
+print('uisng while loop')
+i=0
+while(i!=len(x)):
+    print(x[i])
+    i=i+1
+
+
+o/p:
+
+$python main.py
+8
+[100, 2, 3, 4, 5, 'abc', 3.3]
+100
+3.3
+5
+[4, 5, 'abc', 3.3]
+[100, 2, 3, 4]
+[3, 4, 5]
+[3, 4, 5]
+(2, 3, 2, 3, 2, 3, 2, 3)
+('hi', 'hi', 'hi', 'hi')
+False
+(True, False)
+False
+Using For loop
+100
+2
+3
+4
+5
+abc
+3.3
+uisng while loop
+100
+2
+3
+4
+5
+abc
+3.3
+
+****************************************************************************************
+>>>a=10   //delaration and assaign at same time.   >>>a gives an erroe
+>>> type(a)
+<class 'int'>
+>>> id(a)     // gives the adress of a
+2086991936
+>>> a="test"	//changing directly. cannot happen in c or c++
+>>> type(a)
+<class 'str>>> a=True
+>>> type(a)
+<class 'bool'>
+>>> id(a)
+61781408
+>>> 
+>>> complex(1,2)
+(1+2j)
+>>> x=1+2j
+>>> x
+(1+2j)
+>>> type(x)
+<class 'complex'>
+>>> 
+
+print()									// prints new line
+print("text1",end=" ")
+print("text2")
+print("text3")
+ 
+o/p
+ 
+text1 text2
+text3
+****
+to print multiline statements """   """ 
+
+print("""
+hello
+world
+h r u
+iam fine
+""")
+
+o/p:
+
+hello
+world
+h r u
+iam fine
+*******************************************************
+
+int 
+float			//no double
+bool
+str			//no char
+array
+structures
+unions   
+
+these are drived data types of above:
+
+list
+dict
+set
+tuple
+str
+**********
+int("2453")
+2453			type conversion
+str(2345)
+'2345'
+int("20.34")    //throws error.
+bin()         // to convert to binary
+***************************
+
+>>>3**6			// 3 power 6
+729
+ 
+*****************************
+Operators:
+
+Arthemetic	+,-,*,/,  //(floor division), % , ** (power)
+
+comparision	== , != , > , < ,<= , >= , <> (similar to !=)
+
+assignment	= , += ,-= ,*= ,/=, %=, //= ,**=
+
+logical		and,or,not
+
+bitwise		& , ^ ,~ ,<< ,>>
+
+					
+membership	in , not in							//>>> 10 in [1,2,3,4,5]
+										False						
+
+identity	is , is not	//(same as comparble operator)			//>>> type(x) is int
+										 False
+			
+(stmnt1)if(expression)else(expression)   // used instead of ternaray.no ternary operator
+
+*****************************************************************8
+Floor division(//)
+>>> 1/2
+0.5
+>>> 1//2
+0
+>>> 3/4
+0.75
+>>> 3//4
+0
+>>> 4/3
+1.3333333333333333
+>>> 3//3
+1
+
+***************************************************************
+
+& 
+   10-1010
+   5 -0101
+     -0000	// gives 1 only when both are 1.
+
+| 
+   1010
+   0101
+	-1111   // if either is 1 then anser is 1.
+
+
+~
+   ~x -> -(x+1)
+   ~10 -> -(10+1) =-11
+   ~-11 ->         =10
+
+^
+   8^6
+		//if both values are same then returns 0
+	1000
+	0110
+	    -1110 = 14
+   5^5 =0
+
+<<
+>>
+	rightshift= 10101110111>>3 = 00010101110 // 3 1s are removed rightside.and 3 0s are added to left side
+	7>>3
+	111==000=0
+***********************************************8
+
+list -> list() or []
+	accepts hetero or homo elements 
+tuple-> tuple() or ()
+	''
+dict -> dict() or {}
+
+set -> doesnot allow duplicates. wlll defined collection of objects.
+	set() or {0} // atleast one value
+
+str -> str() or " "
+***************************************************************************
+
+
+>>> a=[1,2,3]
+>>> a.append(10)
+>>> a
+[1, 2, 3, 10]
+
+>>> a=[0]*20
+>>> a
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+>>> a=[1,2,3,4]
+>>> a.append("hi")
+>>> a
+[1, 2, 3, 4, 'hi']
+
+>>> a.insert(2,"tharun")
+>>> a
+[1, 2, 'tharun', 3, 4, 'hi']
+>>> a.insert(10,"world")
+>>> a
+[1, 2, 'tharun', 3, 4, 'hi', 'world']
+
+>>> a.append([4,5,6,7])
+>>> a
+[1, 2, 'tharun', 3, 4, 'hi', 'world', [4, 5, 6, 7]]
+
+>>> a.remove(2)
+>>> a
+[1, 'tharun', 3, 4, 'hi', 'world', [4, 5, 6, 7]]
+
+>>> a[1]
+'tharun'
+>>> a[4]
+'hi'
+>>> a[6]
+[4, 5, 6, 7]
+
+>>> a[6][2]
+6
+
+>>> a[-1]
+[4, 5, 6, 7]
+>>> a[-6]
+'tharun'
+
+>>> a[-1]
+[4, 5, 6, 7]
+
+>>> a[-1][-2]
+6
+
+>>> a[2:4]
+[3, 4]
+>>> a[2:5]
+[3, 4, 'hi']
+>>> a[2:7]
+[3, 4, 'hi', 'world', [4, 5, 6, 7]]
+
+>>> a = [i for i in range(1,31)]
+>>> a
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+
+>>> b = [0 for i in range(1,10)]
+>>> b
+[0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+>>> b =[0 for i in range(0,10)]
+>>> b
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0] 
+
+slicing 
+ name[start:stop:step]
+
+
+>>> a[1:21:2]
+[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+>>> a[0:20:2]
+[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+
+>>> a[::-1]		// prints in reveerse
+[30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+>>> 
+
+**** palindrome 
+>>> s="madam"
+>>> s[::-1]
+'madam'
+>>> p=s[::-1]
+>>> p==s
+True
+********
+sorting 
+
+>>> a=[9,1,10,345,87,9,0,12,3,4,5]
+>>> a.sort();
+>>> a
+[0, 1, 3, 4, 5, 9, 9, 10, 12, 87, 345]
+>>> a.sort(reverse=True)
+>>> a
+[345, 87, 12, 10, 9, 9, 5, 4, 3, 1, 0]
+
+*******************
+extend method.
+>>> a=[1,2,3,4]
+>>> b=[5,6,7,8]
+>>> a.extend(b)
+>>> a
+[1, 2, 3, 4, 5, 6, 7, 8]
+>>> b
+[5, 6, 7, 8]
+>>> 
+********************
+assaignments is only based on adreses but not their vlues in python
+// "deep" copy
+>>> c=a
+>>> a
+[5, 6, 7, 8]
+>>> c=a
+>>> c[2]=30
+>>> c
+[5, 6, 30, 8]
+>>> a
+[5, 6, 30, 8]			// value i changes in a also
+>>> 	 
+
+*****************************
+//"shallow" copy using copy method.
+c= a.copy()
+c[2]=30
+ 
+changes doesnot effect 'a' here.
+*********
+
+len is inbuilt method applied to all datatyes.
+len(a) gives length of a
+
+len(range(10,20)
+10
+********
+a.count(1)  counts number of 1s in the list.
+****LIST are not HASHABLE hence we use TUPLE*************
+
+**************************************TUPLE********************TUPLE**************************************8
+Tuples are Hahable..
+we use this Storing data that cannaot be changed at run time ..
+tuple([1,2,3])
+a=(1,2)
+****a tuple caanot be modified..
+a.append(3) ///////throws error since no attribute append is present 
+
+***********************************sets**********sets*********************
+dont have duplicates.
+
+>>> a={1,2,3,1,2}
+>>> a
+{1, 2, 3}
+
+dont have slicing orr indexing option. becsue it doenot follow any order.
+ 
+a[0] ///throws error...
+*************I*
+
+>>> {(1,2,3),4}
+{4, (1, 2, 3)}
+>>> {[1,2,3],4}
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    {[1,2,3],4}
+TypeError: unhashable type: 'list'
+>>> 
+
+************************
+a={(1,2,3)}
+>>> for i in a:
+	for j in i:
+		print(j)
+
+		
+1
+2
+3
+>>> 
+************************
+>>> a4=[1,2,[1,23]]
+>>> a4
+[1, 2, [1, 23]]
+>>> a5={{1,2},4}
+Traceback (most recent call last):
+  File "<pyshell#75>", line 1, in <module>
+    a5={{1,2},4}
+TypeError: unhashable type: 'set'
+
+to use set in set..  we use FROZENSET
+
+>>> b=frozenset({1,2,3})
+>>> b
+frozenset({1, 2, 3})
+>>> a6={b,5,6}
+>>> a6
+{frozenset({1, 2, 3}), 5, 6}
+
+*************************************************
+******************DICTIONARRY***********************DICT********************
+
+{keys:values}
+
+
+>>> a={'rag':24}
+>>> a
+{'rag': 24}
+>>> a.update({'rag':23})
+>>> a
+{'rag': 23}
+>>> a.update({'abc':45})
+>>> a
+{'rag': 23, 'abc': 45}
+>>> a.update({'abc':46})
+>>> a
+{'rag': 23, 'abc': 46}
+>>> {'rag':23,'abc':24,'rag':43}
+{'rag': 43, 'abc': 24}
+>>> {'rag':23,'abc':23}
+{'rag': 23, 'abc': 23}
+>>>
+>>> #values doenot follow hashable or nnot hashable things 
+
+>>> #list in dict
+>>> {'rag':[1,2,3]}
+{'rag': [1, 2, 3]}
+>>>
+>>>#tuple in dict
+>>> {'rag':(1,2,3)}
+{'rag': (1, 2, 3)}
+
+#can be accesseed in this way
+>>> a['rag']
+23
+
+# cannot be accssed 
+>>> a[23]
+Traceback (most recent call last):
+  File "<pyshell#111>", line 1, in <module>
+    a[23]
+KeyError: 23
+>>> 
+
+##
+instead keys follow hashing .. list is not hashable , tuple  is hashable.	
+>>> {[1,2,4]:43}
+Traceback (most recent call last):
+  File "<pyshell#116>", line 1, in <module>
+    {[1,2,4]:43}
+TypeError: unhashable type: 'list'
+>>> {(1,2,3):43}
+{(1, 2, 3): 43}
+
+****Use of FROMKEYS()
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> a={'abc':12,112:13,13:14,15:16}
+>>> a.fromkeys([13,15],0)
+{13: 0, 15: 0}
+>>> a
+{'abc': 12, 112: 13, 13: 14, 15: 16}
+>>> 
+
+********************************************************
+for loop range() method
+for i in range(len(a))
+
+*************
+enumerate()
+
+for i,v in enumerate("Hello world"):
+	print("the charaecter {} in the  given string is present at index {}".format(v,i))
+
+	
+the charaecter H in the  given string is present at index 0
+the charaecter e in the  given string is present at index 1
+the charaecter l in the  given string is present at index 2
+the charaecter l in the  given string is present at index 3
+the charaecter o in the  given string is present at index 4
+the charaecter   in the  given string is present at index 5
+the charaecter w in the  given string is present at index 6
+the charaecter o in the  given string is present at index 7
+the charaecter r in the  given string is present at index 8
+the charaecter l in the  given string is present at index 9
+the charaecter d in the  given string is present at index 10
+*****************
+
+>>>st="hello {}".format("world")
+>>>st
+'hello world'
+
+*****************************************************************
+3 methods:
+
+1)zip:
+
+>>> names = ["HV","N2","M3"]  #3
+>>> roll=[48,50,51]	#3
+>>> zip(names,roll)
+<zip object at 0x038FFAC8>
+>>> list(zip(names,roll))
+[('HV', 48), ('N2', 50), ('M3', 51)]
+>>> names = ["HV","N2","M3","M4"]	#4 ele
+>>> list(zip(names,roll))
+[('HV', 48), ('N2', 50), ('M3', 51)]	#no errors
+>>> roll=[48,50,51,52,53]		#5 ele 
+>>> list(zip(names,roll))
+[('HV', 48), ('N2', 50), ('M3', 51), ('M4', 52)]	#no errors
+
+
+2)reduce :
+
+>>> import functools
+>>> functools.reduce(operator.add,roll)
+>>>97
+	
+3)filter
+	 THE function that is sent in filter function should return 
+
+>>> def chk(a):
+	if(a>=0):
+		return True
+	return False
+
+>>> roll=[-78,48, 50, 51, -41,-65,52, 53,-31]
+>>> list(filter(chk,roll))		## only gives positive numbers to list
+[48, 50, 51, 52, 53]
+>>> roll
+[-78, 48, 50, 51, -41, -65, 52, 53, -31]
+>>>
+
+
+*******************************
+###	using LAMBDA function      ###
+
+funName= lambda para,meters: expre+ssion
+
+
+>>> ad = lambda a,b: a+b
+>>> ad
+<function <lambda> at 0x00B46BB0>
+>>> ad(1,20)
+21
+
+
+*************************************************************************************************************************
+
+
+
+*****************************************************************************************************************
+
+
+
+***********************************************************************************************************
+
+
+
+******************************************************************************************************************
+
+OOPS CONCEPTS IN PYTHON

@@ -1,0 +1,121 @@
+CSS= cascading style sheets
+we have 3 types of writings in css.
+1. incline css
+2.internal css
+3.external css
+*****************
+INLINE using style as attribute.
+<html>
+	<head>
+		<title>CSS intro</title>
+	</head>
+	<body>
+		<p style="color: red; background-color: #000000;">HELLO. iam tharun</p>  //INLINE
+		<p>How do you do?</p>
+		<p>You look awesome</p>
+	</body>
+
+</html>
+
+********************
+INTERNAL using style as tag.
+		
+<html>
+	<head>
+		<title>CSS intro</title>
+		<style type ="text/CSS">
+		p{
+			color: red;
+			background-color: #000000;
+		 }
+		</style>
+	</head>
+	<body>
+		<p style="color: red; background-color: #000000;">HELLO. iam tharun</p>
+		<p>How do you do?</p>
+		<p>You look awesome</p>
+	</body>
+
+</html>
+
+**********************
+external= we dont use style attribute or tag.
+
+p {
+	color: red;
+	background-color: #000000;
+}
+h1 {
+	color: #efefef;
+	background-color: yellow;		
+}	
+//we save this in a new file with css format.
+and we link this file to currect file where we want to implement styles. without using word style.
+
+<html>
+	<head>
+		<title>CSS intro</title>
+		<link href="external.css" type="text/css" rel="stylesheet"> ///in this way we link.. rel="stylesheet" is must.
+	</head>
+										//type="text/css"  must..
+   	<body>
+		<h1>STYLES CSS</h1>
+		<p style="color: red; background-color: #000000;">HELLO. iam tharun</p>
+		<p>How do you do?</p>
+		<p>You look awesome</p>
+	</body>
+
+</html>
+
+******************************************
+class seclecter and id selecter. both are same.but time of usage is differnt. class-css. id-java script.
+
+
+.head2{							//class.						
+	color: red;
+	background-color: yellow;
+	font-family: bold;
+}
+#head3{							//id
+	color:blue;
+	background-color:rgba(43,196,106,0.4);         // rgba is used to chsnge transparancy. 0.4-lighter. 1-no transparancy. 
+	font-family:italic;
+}
+
+a:link{
+	color:blue;
+	text-decoration:none                     //color at first
+}
+a:visited{
+	color:black;				//after visited	
+	text-decoration:none;
+}
+a:hover{					//when we move cursor over  it					
+	color:red;
+	text-decoration:underline;
+}
+a:active{					//pressing and holding
+	color:blue;
+	font-family:italic;
+	text-decoration:underline
+}
+**********************************************
+MARGINS AND PADDING 
+
+<div class="MarPad">
+		<h4>Margins and Padding</h4>
+		<p >margin:less backgrond spred;padding:more background spread</p>
+</div>
+  
+**
+
+.MarPad{
+	background-color:yellow;
+	margin:40px;			// change here as "padding=40px" to find diff. 
+}
+
+"padding-top=40px"    pushes the background to top 40px'
+similarly padding-bottom,left,right.
+OR=
+
+"padding:40px 0px 30px 20px"  //4 values for 4 directions  top,right,bottom,left

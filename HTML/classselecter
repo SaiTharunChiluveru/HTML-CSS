@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>CSS class seleccter</title>
+		<link href="external.css" type="text/css" rel="stylesheet">
+		<link href="classcss.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>STYLES CSS</h1>
+		<h2 class="head2">USING Class css</h2>
+		<h3 id="head3">colouring</h3>
+		<p style="color: red; background-color: #000000;">HELLO. iam tharun</p>
+		<p id="head3">How do you do?</p>
+		<p class="head2">You look awesome</p>
+		<a href="https://www.google.com" target="_blank">visit Google</a>
+		<div class="MarPad">
+		<h4>Margins and Padding</h4>
+		<p >margin:less backgrond spred;padding:more background spread</p>
+		<ol>
+			<li><a href="https//:www.google.com" target="_blank">GOOGLE</a></li>
+			<li><a href="https//:www.facebook.com" target="_blank">facebook</a></li>
+		</ol>
+		<ul>
+			<li>marvel</li>
+			<li>marvel</li>
+		</ul>	
+		</div>
+		<div class="MarPad2">
+		<h4>Margins and Padding</h4>
+		<p >margin:less backgrond spred;padding:more background spread</p>
+		</div>
+	</body>
+
+</html>

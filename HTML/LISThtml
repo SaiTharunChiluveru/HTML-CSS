@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>LIST</title>
+	</head>
+	<body>
+		<ol>
+		<li>sathish</li>
+		<li>sameer</li>
+		<li>rakesh</li>
+		</ol>
+		<ul>
+		<li>sathish</li>
+		<li>sameer</li>
+		<ul>
+		<li>rakesh</li>
+		<li>shivamani</li>
+		</ul>
+		</ul>
+		
+	</body>
+
+</html>

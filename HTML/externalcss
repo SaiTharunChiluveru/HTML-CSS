@@ -1,0 +1,8 @@
+p{
+	color: red;
+	background-color: #000000;
+}
+h1{
+	color: #efefef;
+	background-color: yellow;		
+}	
